@@ -2,11 +2,11 @@
 #=======================================================================
 #
 #          FILE:  install.sh
-# 
-#         USAGE:  ./install.sh 
-# 
-#   DESCRIPTION:  Install file for PirateBox. 
-# 
+#
+#         USAGE:  ./install.sh
+#
+#   DESCRIPTION:  Install file for PirateBox.
+#
 #       OPTIONS:  ./install.sh <default|board> <optional: USB path>
 #  REQUIREMENTS:  ---
 #          BUGS:  Link from install
@@ -49,8 +49,8 @@ fi
 
 cp -rv "$CURRENT_DIR"/piratebox /opt &> /dev/null
 echo "Finished copying files..."
-echo "$NET.$IP_SHORT piratebox.lan">>/etc/hosts
-echo "$NET.$IP_SHORT piratebox">>/etc/hosts
+echo "$NET.$IP_SHORT yupland.lan">>/etc/hosts
+echo "$NET.$IP_SHORT yupland">>/etc/hosts
 
 if [[ -d /etc/init.d/ ]]; then
 	ln -s /opt/piratebox/init.d/piratebox /etc/init.d/piratebox

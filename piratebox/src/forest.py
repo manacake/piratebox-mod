@@ -73,7 +73,7 @@ CSS_PATH = '/content/css/forest.css'
 BOARD_TITLE = 'PirateBox Board'
 # Simple Description of the board, appears at the top of each page
 BOARD_DESCRIPTION = """PirateBox Board. Put media reviews or questions here.<br>
-<A HREF="http://piratebox.lan">Click here to go back to the main site</a> """
+<A HREF="http://yupland.lan">Click here to go back to the main site</a> """
 # How dates are stored (see python time module for details)
 DATE_FORMAT = '%d %b %Y %H:%M:%S'
 # If no author name is given, then this is the default.
@@ -193,7 +193,7 @@ html_escape_table = {
         ":": "&#58;", '?': "&#63;", '!': "&#33;", '(': "&#40;",
         "{": "&#121;", "[": "&#91", "-": "&#45",
         }
-    
+
 def strip_html( text ):
     """Remove HTML chars from the given text and replace them with HTML
        entities. """
@@ -225,8 +225,8 @@ def process_subject(subject):
     if ( subject is not None):
 	return subject[:MAX_SUBJECT_LEN]
     else:
- 	return "No Subject"	
-	
+ 	return "No Subject"
+
 
 def get_query_params():
     """Return the URL parameters as a dictionary.
@@ -492,7 +492,7 @@ def redirect( threadid, offset=None ):
     if offset:
         new_location += '&offset=%s' % offset
 
-## can't use standard redirect on CGIHTTPServer 
+## can't use standard redirect on CGIHTTPServer
 #    print 'Status: 303 See Other'
 #    print 'Location: %s' % new_location
 #    print
@@ -502,7 +502,7 @@ def redirect( threadid, offset=None ):
     print
     print '<html><head><meta http-equiv="refresh" content="0;url=%s">' % new_location
     print "</head></html>"
-	
+
 def handle():
     """Main entry point for our code. Handles the web request."""
 
